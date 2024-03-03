@@ -49,6 +49,7 @@ app.post('/', async (req, res) => {
     const data = new User(req.body)
     await data.save()
     res.send("Data sucessfully saved Special Thanks!")
+    // alert("Data sucessfully saved Special Thanks!")
 })
 
 app.listen(app_listen, () => {
